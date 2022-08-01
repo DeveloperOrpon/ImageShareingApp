@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/userNameId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Orpon Hasan"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="17 minutes ago" />
+
+        <TextView
+            android:id="@+id/discriptionId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Favorite image" />
+
+        <ImageView
+            android:id="@+id/userImageId"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="8dp"
+            tools:srcCompat="@tools:sample/avatars" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="3"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/likeBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:src="@drawable/like"
+                android:text="like"/>
+            <ImageView
+                android:id="@+id/commentBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:src="@drawable/comment"
+                android:text="like"/>
+            <ImageView
+                android:id="@+id/shareBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_share_24"
+                android:text="like"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
